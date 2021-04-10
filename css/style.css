@@ -19,7 +19,7 @@ body{
     color: var(--Gray);
 }
 
-b{
+span {
     color: var(--Dark_Gray);
 }
 
@@ -85,8 +85,15 @@ hr{
 
     grid-gap: 1rem;
     padding: 20px 10px;
+}
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
 
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media screen and (max-width: 500px){
