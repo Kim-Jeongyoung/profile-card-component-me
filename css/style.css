@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+ --white: #ffffff;
+ --Cyan: hsl(185, 75%, 39%);
+ --Gray:hsl(227, 10%, 46%);
+ --Dark_Gray:hsl(229, 23%, 23%);
+}
+
+
+
+body{
+    background-color: var(--Cyan);
+    font-size: 16px;
+    font-family: Kumbh Sans;
+    color: var(--Gray);
+}
+
+b{
+    color: var(--Dark_Gray);
+}
+
+.container{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.container .img1{
+    position: fixed;
+    top: -70%;
+    left: -50%;
+}
+
+.container .img2{
+    position: fixed;
+    bottom: -70%;
+    right: -50%;
+}
+
+.card{
+    z-index: 2;
+    width: 300px;
+    background-color: var(--white);
+    border-radius: 20px;
+    text-align: center;
+
+
+}
+
+.card_image_victor{
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    margin-top: -50px;
+
+
+}
+
+.top{
+    background-image: url(images/bg-pattern-card.svg);
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+}
+
+.name{
+    margin: 10px 0px 30px 0 ;
+}
+
+hr{
+    width: 80%;
+    margin: 0 auto;
+    color: #cccccc;
+    border-top: none;
+}
+.likes{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 20px 10px;
+
+
+}
+
+@media screen and (max-width: 500px){
+
+    .card{
+        width: 250px;
+    }
+}
