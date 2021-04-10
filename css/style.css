@@ -45,13 +45,11 @@ b{
 }
 
 .card{
-    z-index: 2;
     width: 300px;
     background-color: var(--white);
     border-radius: 20px;
     text-align: center;
-
-
+      z-index: 2;
 }
 
 .card_image_victor{
@@ -79,13 +77,10 @@ hr{
     border-top: none;
 }
 .likes{
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
     padding: 20px 10px;
-
-
 }
 
 @media screen and (max-width: 500px){
