@@ -1,6 +1,5 @@
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -45,14 +44,16 @@ b{
 }
 
 .card{
+    z-index: 2;
     width: 300px;
     background-color: var(--white);
     border-radius: 20px;
     text-align: center;
-      z-index: 2;
+
+
 }
 
-.card_image_victor{
+.member_photo{
     border-radius: 50%;
     border: 2px solid var(--white);
     margin-top: -50px;
@@ -63,6 +64,7 @@ b{
 .top{
     background-image: url(images/bg-pattern-card.svg);
     height: 150px;
+    width: 300px;
     border-radius: 20px 20px 0 0;
 }
 
@@ -77,10 +79,14 @@ hr{
     border-top: none;
 }
 .likes{
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
     grid-gap: 1rem;
     padding: 20px 10px;
+
+
 }
 
 @media screen and (max-width: 500px){
